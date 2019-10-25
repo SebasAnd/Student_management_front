@@ -1,0 +1,15 @@
+<table id="customers">
+    <tr>
+    <th>Alumno ID</th>
+    <th>Nombre</th>
+    <th>Carrera</th>
+    <th>Calificacion</th>
+    </tr>
+    <tr *ngFor="let item of alumns ; let i = index">
+    <td>{{item.Alumnoid}}</td>
+    <td>{{item["nombre "]}}</td>
+    <td>{{item.carrera}}</td>
+    <td>{{item.Calificacion}}</td>
+    </tr>
+</table>
+

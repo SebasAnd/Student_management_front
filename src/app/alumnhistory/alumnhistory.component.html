@@ -1,0 +1,18 @@
+<h2 *ngIf="student[0]">Nombre :</h2><span *ngIf="student[0]">{{ student[0]["nombre "] }}</span>
+<h2 *ngIf="student[0]">Identificación  : </h2><span *ngIf="student[0]">{{ student[0].Alumnoid }}</span>
+<h2 *ngIf="student[0]">Carrera  : </h2><span *ngIf="student[0]">{{ student[0].carrera }}</span>
+
+<table id="customers">
+        <tr>
+        <th>Código Asignatura</th>
+        <th>Nombre</th>
+        <th>Calificacion</th>
+        </tr>
+        <tr *ngFor="let item of student ; let i = index">
+        <td>{{item.Asignaturaid}}</td>
+        <td *ngIf="asignature[i]">{{ asignature[i].nombre}}</td>
+        <td>{{item.Calificacion}}</td>
+        </tr>
+    </table>
+
+   
